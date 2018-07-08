@@ -9,6 +9,8 @@
     grid-template-columns: 75px 1fr 300px;
     grid-template-rows: auto 1fr auto;
     grid-gap: 10px;
+    max-width: 1200px;
+    margin: auto;
     height: 100vh;
     line-height: 10px;
 }
@@ -27,8 +29,16 @@ nav {
 
 main {
     grid-area: content;
-    background-color: lightseagreen;
 }
+
+#background{
+    background-image: url("day.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    transition: all 0.5s ease-in-out;
+}
+
 
 /* WEEK CALENDAR */
 .calendar{
