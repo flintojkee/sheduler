@@ -43,6 +43,7 @@ main {
 .calendar{
     background-color: rgba(193, 193, 193, 0.41);
     height: 100%;
+    box-shadow: 0 1px 32px rgba(0, 0, 0, 0.12), 0 1px 16px rgba(0, 0, 0, 0.24);
 }
 ul {
     display: grid;
@@ -124,15 +125,18 @@ aside {
 }
 
 footer {
-    grid-area: footer;
-    height: 100px;
-    background-color: orange;
+    grid-column: span 3;
+    padding: 30px;
+    text-align: center;
+    font-size: 1em;
+    color: #ffffff;
 }
 
 /* Switch shift button */
 
 /* The switch - the box around the slider */
 .switch {
+
     position: relative;
     display: inline-block;
     width: 60px;
@@ -144,6 +148,7 @@ footer {
 
 /* The slider */
 .slider {
+    box-shadow: 0 1px 32px rgba(10, 19, 52, 0.54), 0 1px 16px rgba(12, 27, 57, 0.75);
     position: absolute;
     cursor: pointer;
     top: 0;
@@ -162,12 +167,13 @@ footer {
     width: 26px;
     left: 4px;
     bottom: 4px;
-    background-color: #d9d9d9;
+    background-color: rgba(255, 255, 255, 0.56);
     -webkit-transition: .4s;
     transition: .4s;
 }
 
 input:checked + .slider {
+    box-shadow: 0 1px 32px rgba(255, 225, 46, 0.55), 0 1px 16px rgba(255, 246, 50, 0.73);
     background-color: #ffe700;
 }
 
@@ -190,7 +196,6 @@ input:checked + .slider:before {
     border-radius: 50%;
 }
 
-
 /* Assign button */
 .button {
     background-color: #4CAF50; /* Green */
@@ -207,7 +212,7 @@ input:checked + .slider:before {
     position: absolute;
     top: 0;
     left: 0;
-    transition: .5s ease;
+    transition: 1s ease;
     cursor: pointer;
 
 }
